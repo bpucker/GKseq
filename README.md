@@ -66,6 +66,28 @@ optional:
 `--score` specifies a minimal score cutoff to filter out low quality variants.
 
 
+### Genome-wide distribution of coverage (sequencing depth)
+
+This script is based on previous studies (REF1, REF2). The coverage of a read mapping is plotted along the pseudochromosomes. This script is customized for the Col-0 reference genome sequence TAIR9/TAIR10.
+
+```
+python cov_plot2.py
+--in <FULL_PATH_TO_COVERAGE_FILE>
+--out <FULL_PATH_TO_OUTPUT_FILE>
+--ref <FULL_PATH_TO_REFERENCE_COVERAGE_FILE>
+					
+optional:
+--name <NAME>
+```
+
+`--in` specifies a coverage file. This TAB-separated file contains the pseudochromosome name, position, and coverage of the respective position. This file can be generated based on a BAM file using https://github.com/bpucker/MGSE/blob/master/construct_cov_file.py.
+
+`--ref` specifies a FASTA file which was used to generate the read mapping. It is important that pseudochromosome names match the names in the coverage file.
+
+`--out` specifies an output folder, where the figure file and the data file will be placed. This folder will be created if it does not exist already.
+
+`--name` specifies a name to be included in all file names.
+
 
 
 
