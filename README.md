@@ -23,6 +23,26 @@ optional:
 `--cut` specifies a length cutoff for the selection of ultra long reads. Only reads passing this filter will be written into the output file. Default: 3001bp.
 
 
+### Filter SVIM results
+
+This script was used to remove 'small' structural variants from the SVIM results.
+
+```
+python filter_SVIM_VCF.py
+--in <INPUT_VCF>
+--out <OUTPUT_VCF>
+--minsize <MINIMAL_SV_SIZE>[1000]
+```
+
+
+`--in` specifies a VCF file produced by SVIM.
+
+`--out` specifies a VCF file which will include the variants passing the specified length filter.
+
+`--minsize` specifies the minimal size of structural variants to be included in the output file. Default: 1000 bp.
+
+
+
 ### Genome-wide distribution of sequence variants
 
 This script is intended to generate a genome-wide distribution plot of SVIM results.
