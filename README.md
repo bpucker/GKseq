@@ -37,7 +37,7 @@ optional:
 --score <INT, minimal SVIM score to consider variant>[10]
 ```
 
-`--in` specifies a VCF file produced by SVIM.
+`--in` specifies a VCF file produced by SVIM. Analysed variants are 'DUP:TANDEM', 'INV', 'INS:NOVEL', 'DEL', and 'DUP:INT'.
 
 `--ref` specifies a FASTA file which matches the supplied VCF file.
 
