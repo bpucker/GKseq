@@ -68,7 +68,7 @@ optional:
 
 ### Genome-wide distribution of coverage (sequencing depth)
 
-This script is based on previous studies (REF1, REF2). The coverage of a read mapping is plotted along the pseudochromosomes. This script is customized for the Col-0 reference genome sequence TAIR9/TAIR10.
+This script is based on previous studies ([10.3390/genes10090671](https://doi.org/10.3390/genes10090671), [10.1534/g3.119.400847](https://doi.org/10.1534/g3.119.400847)). The coverage of a read mapping is plotted along the pseudochromosomes. This script is customized for the Col-0 reference genome sequence TAIR9/TAIR10.
 
 ```
 python cov_plot2.py
@@ -93,4 +93,10 @@ optional:
 
 
 ### References
+
+Pucker, B. (2019). Mapping-based genome size estimation. bioRxiv. doi:[10.1101/607390](https://doi.org/10.1101/607390).
+
+Pucker B, Rückert C, Stracke R, Viehöver P, Kalinowski J, Weisshaar B. Twenty-Five Years of Propagation in Suspension Cell Culture Results in Substantial Alterations of the Arabidopsis Thaliana Genome. Genes. 2019. doi:[10.3390/genes10090671](https://doi.org/10.3390/genes10090671).
+
+Busche M*, Pucker B*, Viehöver P, Weisshaar B, Stracke R. (2020). Genome Sequencing of Musa acuminata Dwarf Cavendish Reveals a Duplication of a Large Segment of Chromosome 2. G3: Genes|Genomes|Genetics. doi:[10.1534/g3.119.400847](https://doi.org/10.1534/g3.119.400847).
 
