@@ -89,6 +89,26 @@ optional:
 `--name` specifies a name to be included in all file names.
 
 
+### Analysis of long read per base quality
+
+This script is intended to analyse the local quality along ONT reads.
+
+```
+python analyze_read_quality.py
+--in <FASTQ_INPUT_FILE>
+--info <INFO_FILE>
+--out <OUTPUT_FOLDER>
+```
+
+`--in` specifies a FASTQ input file which contains long reads.
+
+`--info` specifies a text file with details about the reads of interest. This file is TAB-separated with the following columns: SampleID, ReadID (need to match a read in the supplied FASTQ), Start, End, and Comment (optiona). Start and end can be used to analyse just a fraction of a read.
+
+`--out` specifies the output folder.
+
+
+
+
 
 
 
