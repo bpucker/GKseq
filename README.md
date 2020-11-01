@@ -125,7 +125,7 @@ python reduce_contig_names.py
 
 ### Clean assembly
 
-This script is intended to remove contamination from a long read assembly file. The general concept is based on previous work (Nd-1, croton, Yam).
+This script is intended to remove contamination from a long read assembly file. The general concept is based on previous work ( [10.1371/journal.pone.0164321](https://doi.org/10.1371/journal.pone.0164321), [10.3389/fmolb.2018.00062](https://doi.org/10.3389/fmolb.2018.00062), [10.3390/genes11030274](https://doi.org/10.3390/genes11030274)).
 
 ```
 python clean_assembly.py
@@ -178,3 +178,8 @@ Pucker B, Rückert C, Stracke R, Viehöver P, Kalinowski J, Weisshaar B. Twenty-
 
 Busche M*, Pucker B*, Viehöver P, Weisshaar B, Stracke R. (2020). Genome Sequencing of Musa acuminata Dwarf Cavendish Reveals a Duplication of a Large Segment of Chromosome 2. G3: Genes|Genomes|Genetics. doi:[10.1534/g3.119.400847](https://doi.org/10.1534/g3.119.400847).
 
+Pucker, B., Holtgräwe, D., Rosleff Sörensen, T., Stracke, R., Viehöver, P., and Weisshaar, B. (2016). A de novo Genome Sequence Assembly of the Arabidopsis thaliana Accession Niederzenz-1 Displays Presence/Absence Variation and Strong Synteny. PloS-ONE 11:e0164321. doi:[10.1371/journal.pone.0164321](https://doi.org/10.1371/journal.pone.0164321).
+
+Siadjeu C.*, Pucker B.*, Viehoever P., Albach D. and Weisshaar B. (2020). High contiguity de novo genome sequence assembly of Trifoliate yam (Dioscorea dumetorum) using long read sequencing. Genes. doi:[10.3390/genes11030274](https://doi.org/10.3390/genes11030274).
+
+Haak, M., Vinke, S., Keller, W., Droste, J., Rückert, C., Kalinowski, J., & Pucker, B. (2018). High Quality de novo Transcriptome Assembly of Croton tiglium. Frontiers in Molecular Biosciences, 5. doi:[10.3389/fmolb.2018.00062](https://doi.org/10.3389/fmolb.2018.00062).
