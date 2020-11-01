@@ -123,6 +123,39 @@ python reduce_contig_names.py
 
 
 
+### Clean assembly
+
+This script is intended to remove contamination from a long read assembly file. The general concept is based on previous work (Nd-1, croton, Yam).
+
+```
+python clean_assembly.py
+--out <OUTPUT_FOLDER>
+--assembly <ASSEMBLY_FILE>
+--cov <COVERAGE_FILE>
+--organel <ORGANEL_SEQ_FILE>
+--white <WHITE_LIST_SEQ_FILE>
+--black <BLACK_LIST_SEQ_FILIE>
+					
+optional:
+--minlen <INT, MINIMAL_CONTIG_LENGTH>
+--mincov <INT, MINIMAL_READ_MAPPING_COVERAGE_FOR_FILTERING>
+--maxcov <INT, MAXIMAL_READ_MAPPING_COVERAGE_FOR_FILTERING>
+--wordsize <INT, WORD_SIZE_FOR_BLAST>
+--cpus <INT, NUMBER_OF_THREADS_FOR_BLAST_SEARCH>
+```
+
+`--assembly` specifies a FASTA input file which contains sequences with complex header lines.
+
+`--out` specifies the output folder. All output files will be stored in this folder. The folder will be created if it does not exist already.
+
+`--cov` specifies a coverage file. The sequence names in this coverage file must match the sequence names in the assembly file. The average coverage per contig can be used as filter.
+
+`--organel` specifies a FASTA file containing the organellar genome sequences of the species of interest or closely related species. This is used to identiy contigs belonging to these subgenomes.
+
+`--white` specifies a FASTA file with white list sequences. Hits against these sequences will be used to preserve the sequences during the filter steps.
+
+`--black` specifies a FASTA file with black list sequences. Hits against these sequences will be used to discard the sequences during the filter steps unless their are also hits against the white list sequences.
+
 
 
 
