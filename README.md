@@ -156,6 +156,15 @@ optional:
 
 `--black` specifies a FASTA file with black list sequences. Hits against these sequences will be used to discard the sequences during the filter steps unless their are also hits against the white list sequences.
 
+`--minlen` specifies a minimal contig length. All contigs shorter than this value will be removed in the filtering. This value should be set based on the read length distribution. Default: 100000 bp (100kb).
+
+`--mincov` specifies a minimal coverage in the read mapping that is expected for all valid contigs. This filter can be used to identify artifacts with low coverage. This filter needs to be adapted to the average coverage. Default: 10.
+
+`--maxcov` specifies a maximal coverage in the read mapping that is expected for all valid contigs. This filter can be used to identify and discard collapsed sequences or organellar sequences. This value should be set depending on the average coverage. Default: 200.
+
+`--wordsize` specifies the '-word_size' parameter which is passed on to BLAST. Using a large value can substantially speed up the process, but decreases the sensitivity. Default: 30.
+
+`--cpus` specifies the number of threads to use for BLAST. Default: 20.
 
 
 
