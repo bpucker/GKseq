@@ -107,6 +107,22 @@ python analyze_read_quality.py
 `--out` specifies the output folder.
 
 
+### Reduce sequence names in assembly file to contig names
+
+This script is intended to remove everything except the actual contig name from the header line in a multiple FASTA file.
+
+```
+python reduce_contig_names.py
+--in <INPUT_FILE>
+--out <OUTPUT_FILE>
+```
+
+`--in` specifies a FASTA input file which contains sequences with complex header lines.
+
+`--out` specifies the output folder. Sequences will be written to the output file, but header lines will be reduced to the actual contig name.
+
+
+
 
 
 
