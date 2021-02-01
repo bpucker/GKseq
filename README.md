@@ -167,7 +167,50 @@ optional:
 `--cpus` specifies the number of threads to use for BLAST. Default: 20.
 
 
+### Assembly Error Finder (AEF) ###
 
+Long reads allow the evaluation of existing assemblies through the inspection of reads mappings. A high number of read alignments clustered in a region can point to potential assembly errors. AEF.py analyzes the number of such read alignment ends per region to find critical regions with enriched alignment ends.
+
+
+```
+python AEF.py
+--out <OUTPUT_FOLDER>
+--bed <INPUT_BED_FILE> | --bam <INPUT_BAM_FILE>
+--fasta <ASSEMBLY_FASTA_FILE>
+
+optional:
+--gff <GFF_FILE>
+--res <RESOLUTION>[100]
+--sat <SATURATION>[100]
+--name <NAME>[xxx]
+--relfreq <RELATIVE_ALIGNMENT_END_CUTOFF>[10]
+--factor <IQR_OVER_MEDIAN_CUTOFF>[5]
+--dist <EXCLUDE_DISTANCE_TO_SEQ_ENDS>[1000]
+--tolerance <DIST_TO_GENE>[0]
+```
+
+
+`--out` specifies the output folder. All output files will be stored in this folder. The folder will be created if it does not exist already.
+
+`--bed` specifies a BED input file which contains sequences with complex header lines. `--bam` is an alternative input option which specifies a BAM file. `--in` can be used to provide a BED file.
+
+`--fasta` specifies a FASTA assembly file which is used to check all sequences and and to provide the output in the correct order.
+
+`--gff` specifies a.
+
+`--res` specifies a.
+
+`--sat` specifies a.
+
+`--name` specifies a.
+
+`--relfreq` specifies a.
+
+`--factor` specifies a.
+
+`--dist` specifies a.
+
+`--tolerance` specifies a.
 
 
 ### References
