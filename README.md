@@ -196,21 +196,22 @@ optional:
 
 `--fasta` specifies a FASTA assembly file which is used to check all sequences and and to provide the output in the correct order.
 
-`--gff` specifies a.
+`--gff` specifies GFF3 file which contains positions of annotated gene models. This file is used to check if potential assembly errors could affect genes.
 
-`--res` specifies a.
+`--res` specifies the resolution of this analysis. The specified window size (base pairs) is used to find enrichments of read alignment ends. Default: 100bp.
 
-`--sat` specifies a.
+`--sat` specifies a saturation for the visualization. This is important to accommodate all values in one figure. The best value depends on the average coverage. Usually, a value below the average coverage should be a good choice. Default: 100x.
 
-`--name` specifies a.
+`--name` specifies a name which is used as prefix for the output file.
 
-`--relfreq` specifies a.
+`--relfreq` specifies a minimal cutoff for the relative frequency of alignment ends in a window. Only windows with more than this relative value will be reported as potential assembly errors. The number of read alignment ends in a window is normalized to the average number of such alignment ends over all windows. Default: 10.
 
-`--factor` specifies a.
+`--factor` specifies a minimal cutoff for windows to be considered as assembly errors. This factor determines how many interquartile ranges (IQRs) the value of a window needs to be above the median of all windows to consider a region. This option is slightly redundant with `--relfreq`. Default: 5.
 
-`--dist` specifies a.
+`--dist` specifies a distance to contig/pseudochromosome ends which is masked in the analysis. No assembly errors are reported in these regions, because read alignment ends must be enriched in these regions.
 
-`--tolerance` specifies a.
+`--tolerance` specifies the tolerated distance between a gene and the next assembly error to flag the gene as potentially effected.
+
 
 
 ### References
