@@ -214,6 +214,24 @@ optional:
 
 
 
+```
+python group_to_regions.py
+--out <OUTPUT_FILE>
+--in <INPUT_FILE>
+
+optional:
+--win <WINDOW_SIZE>[30000]
+```
+
+
+`--in` specifies the input file which was produced by AEF.py.
+
+`--out` specifies the output file which contains the assembly error candidate regions.
+
+`--win` specifies the maximal distance between initial feature that will be joined into one candidate region. Default: 30kb.
+
+
+
 ### References
 
 Pucker, B (2019). Mapping-based genome size estimation. bioRxiv. doi:[10.1101/607390](https://doi.org/10.1101/607390).
